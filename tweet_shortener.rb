@@ -50,3 +50,4 @@ def selective_tweet_shortener(string)
   else string
   end
 end 
+
