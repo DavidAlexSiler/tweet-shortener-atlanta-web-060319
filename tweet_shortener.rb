@@ -38,14 +38,14 @@ def word_substituter(string)
   end.join(" ")
 end  
 
-bulk_tweet_shortner(array)
-  array.each do |tweet| 
-    puts word_substituter(tweet)
-end
+# bulk_tweet_shortner(array)
+#   array.each do |tweet| 
+#     puts word_substituter(tweet)
+# end
 
-# def selective_tweet_shortener(string)
-#   if string.length > 140
-#     word_substituter(string)
-#   else string
-#   end
-# end 
+def selective_tweet_shortener(string)
+  if string.length > 140
+    word_substituter(string)
+  else string
+  end
+end 
