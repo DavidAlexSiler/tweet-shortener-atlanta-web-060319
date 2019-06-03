@@ -51,3 +51,10 @@ def selective_tweet_shortener(string)
   end
 end 
 
+def shortened_tweet_truncator(string)
+  if selective_tweet_shortener(string).length > 140 
+    string[0..139]
+  else
+    selective_tweet_shortener(string)
+  end
+end
